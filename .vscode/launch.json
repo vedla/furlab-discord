@@ -13,7 +13,7 @@
         "run",
         "--",
         "yarn",
-        "dev"
+        "dev:nodemon"
       ],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal"

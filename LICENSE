@@ -21,13 +21,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Portions of this project reuse code that is licensed under the GNU General Public License v3.0 (GPLv3). See the [path/to/folder] for details.
+Portions of this project reuse code that is licensed under the GNU General Public License v3.0 (GPLv3).
 
 ### Third-Party and Commissioned Assets
 
 This repository does not include assets such as images, artwork, or other media that are either commissioned specifically for this project or licensed through third-party services (e.g., stock images). These assets are subject to licensing restrictions and are not authorized for redistribution or reuse.
 
-If you are contributing to this project or running a local instance, you will need to obtain the appropriate assets independently and place them in the `src/assets/licensed/` folder or another designated directory and add the source into `src/assets/licensed-assets.md`. This folder will be automatically ignored when committing changes.
+If you are contributing to this project or running a local instance, you will need to obtain the appropriate assets independently and place them in the `assets/licensed/` folder or another designated directory and add the source into `assets/licensed-assets.md`. This folder will be automatically ignored when committing changes.
 
 
 ### Third-Party Dependencies

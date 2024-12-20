@@ -1,0 +1,11 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/dist
+**/vendor
+**/vendors
+**/chunks
+**/.vscode
+**/*min.js
+**/*min.css

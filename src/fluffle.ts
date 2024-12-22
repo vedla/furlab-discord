@@ -12,9 +12,12 @@ export async function reverseSearch(imageBuffer: Buffer): Promise<any> {
     filename: 'image.png',
     contentType: 'image/png',
   }); // Attach the file
+  
+  
+
 
   // Correctly append platforms as an array
-  formData.append('includeNsfw', includeNsfw ? 'true' : 'false');
+  formData.append('includeNsfw', 'true');
 
   formData.append('platforms[]', 'Fur Affinity');
   formData.append('platforms[]', 'Twitter');

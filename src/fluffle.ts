@@ -14,6 +14,8 @@ export async function reverseSearch(imageBuffer: Buffer): Promise<any> {
   }); // Attach the file
 
   // Correctly append platforms as an array
+  formData.append('includeNsfw', includeNsfw ? 'true' : 'false');
+
   formData.append('platforms[]', 'Fur Affinity');
   formData.append('platforms[]', 'Twitter');
   formData.append('platforms[]', 'e621');
@@ -22,7 +24,9 @@ export async function reverseSearch(imageBuffer: Buffer): Promise<any> {
   formData.append('platforms[]', 'DeviantArt');
   formData.append('platforms[]', 'Inkbunny');
 
-  formData.append('limit', '8'); // Results limit
+  formData.append('limit', '8');
+  
+  // I know, the formatting is broken. i edited this on my phone.
 
   try {
     const response = await axios.post('https://api.fluffle.xyz/v1/search', formData, {

@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "node dist/bot.js",
-    "dev": "doppler run nodemon --watch src --ext ts --exec ts-node src/bot.ts",
+    "dev": "doppler run -- nodemon --watch src --ext ts --exec ts-node src/bot.ts",
     "dev:nodemon": "nodemon --watch src --ext ts --exec ts-node src/bot.ts",
     "dev:doppler": "doppler run ts-node src/bot.ts",
     "build": "tsc",

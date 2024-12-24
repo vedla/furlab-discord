@@ -1,5 +1,5 @@
 import { Client, GatewayIntentBits, EmbedBuilder } from 'discord.js';
-import { reverseSearch } from './fluffle';
+import { reverseSearch } from './furlab-api';
 import { preprocessImage } from './preprocessImage';
 
 const client = new Client({
@@ -29,8 +29,11 @@ client.on('messageCreate', async (message) => {
     // Preprocess the image
     const preprocessedImage = await preprocessImage(attachment.url);
 
+    // console.log(preprocessedImage);
     // Perform reverse search
     const results = await reverseSearch(preprocessedImage);
+
+    console.log(results);
 
     if (results?.results?.length > 0) {
       const topResult = results.results[0];

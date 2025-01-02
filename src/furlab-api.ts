@@ -17,7 +17,7 @@ export async function reverseSearch(imageBuffer: Buffer): Promise<any> {
 
   // Include required parameters
   formData.append('includeNsfw', 'true');
-
+  console.warn(process.env.API_TOKEN);
   // Send request to the API
   try {
     const response = await axios.post(process.env.API_URL!, formData, {

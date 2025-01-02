@@ -9,18 +9,22 @@
   "private": true,
   "scripts": {
     "start": "node dist/bot.js",
-    "dev": "doppler run -- nodemon --watch src --ext ts --exec ts-node src/bot.ts",
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/bot.ts",
+    "dev-doppler": "doppler run -- nodemon --watch src --ext ts --exec ts-node src/bot.ts",
     "dev:nodemon": "nodemon --watch src --ext ts --exec ts-node src/bot.ts",
     "dev:doppler": "doppler run ts-node src/bot.ts",
     "build": "tsc",
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@devmehq/open-graph-extractor": "^1.0.4",
     "@types/node": "^22.10.2",
     "axios": "^1.7.9",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.7",
+    "fetch-opengraph": "^1.0.36",
     "form-data": "^4.0.1",
+    "link-preview-js": "^3.0.12",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
